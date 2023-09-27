@@ -1,0 +1,287 @@
+ /* General styles */
+ body {
+     /* Set the background color and font properties */
+     background-color: #161C2D;
+     margin: 0;
+     color: #333;
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+ }
+
+ .cover {
+     /* Styling for the cover section with a background image */
+     background-image: url("https://source.unsplash.com/random/1920x1080/?tech,computer");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 3rem;
+     color: #fff;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ }
+
+ .navbar {
+     /* Styling for the navigation bar */
+     background-color: #0e1b25ab;
+     color: rgba(49, 45, 45, 0.999);
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     padding: 20px;
+     padding-bottom: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     backdrop-filter: blur(6.5px);
+     -webkit-backdrop-filter: blur(6.5px);
+ }
+
+ .navbar-brand {
+     /* Styling for the navigation bar brand (logo) */
+     font-size: 2rem;
+     color: #fff;
+     text-decoration: none;
+ }
+
+ .navbar-nav {
+     /* Styling for the navigation links container */
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+ }
+
+ .nav-item {
+     /* Styling for each navigation item (link) */
+     margin-left: 20px;
+ }
+
+ .nav-link {
+     /* Styling for the navigation links */
+     font-size: 1.5rem;
+     color: #fff;
+     text-decoration: none;
+     padding: 10px 20px;
+     border-radius: 30px;
+     transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+ .nav-link:hover {
+     /* Styling for navigation links on hover */
+     color: #333;
+     background-color: rgba(255, 255, 255, 0.8);
+ }
+
+ .navbar-nav-hidden {
+     /* Hide the navigation links on small screens */
+     display: none;
+ }
+
+ .show-more-btn {
+     /* Styling for the 'Show More' button */
+     font-size: 1.5rem;
+     color: #fff;
+     text-decoration: none;
+     padding: 10px 20px;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .show-more-btn:hover {
+     /* Styling for the 'Show More' button on hover */
+     background-color: rgba(255, 255, 255, 0.8);
+ }
+
+ .bodyquote {
+     /* Styling for the main content section */
+     background-color: #161C2D;
+     padding: 50px;
+     text-align: center;
+ }
+
+ .bodyframe {
+     /* Styling for the body frame within the main content section */
+     background-color: #383333c5;
+     padding: 30px;
+     border-radius: 20px;
+     box-shadow: inset 4px 0px 18px 0px rgba(255, 255, 255, 0.686);
+     color: white;
+ }
+
+ .fancy-hr {
+     /* Styling for the fancy horizontal rule */
+     border: none;
+     height: 2px;
+     background-image: linear-gradient(to right, #333, #f0f0f0, #333);
+ }
+
+ .cta-button {
+     /* Styling for the call-to-action button */
+     padding: 12px 24px;
+     font-size: 1.5rem;
+     background-color: #2d2d2d;
+     color: #fff;
+     box-shadow: inset 4px 0px 18px 0px rgba(255, 255, 255, 0.686);
+     border: none;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .cta-button:hover {
+     /* Styling for the call-to-action button on hover */
+     background-color: #555;
+ }
+
+ /* Profile Cards styles */
+ .profile-cards {
+     /* Styling for the profile cards container */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 20px;
+     margin-top: 20px;
+     max-width: 1200px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .profile-card {
+     /* Styling for each profile card */
+     flex-basis: calc(33.3333% - 20px);
+     margin-bottom: 20px;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     box-shadow: -2px -3px 20px 0px rgba(255, 255, 255, 0.273);
+     background-color: #2d2d2d;
+     color: white;
+     overflow: hidden;
+     transition: transform 0.3s ease;
+     cursor: pointer;
+ }
+
+ .profile-card:hover {
+     /* Animation for profile cards on hover */
+     transform: translateY(-5px);
+ }
+
+ .profile-card img {
+     /* Styling for the profile card images */
+     width: 100%;
+     height: auto;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+
+ .profile-card h3 {
+     /* Styling for the profile card headings */
+     text-align: center;
+     margin: 10px 0;
+     font-size: 1.8rem;
+     color: #ffffff;
+ }
+
+ .profile-card p {
+     /* Styling for the profile card paragraphs */
+     text-align: center;
+     margin-bottom: 15px;
+     font-size: 1.2rem;
+     color: #777;
+ }
+
+ .footer {
+     padding: 20px;
+     background-color: #2d2d2d;
+     color: white;
+ }
+
+ .footer-elements {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-content: flex-start;
+     justify-content: space-evenly;
+     align-items: flex-start;
+ }
+
+ #footer-hr {
+     height: 100px;
+     /* Adjust the height as needed */
+     margin: 20px auto;
+     /* Adjust margin as needed */
+     background-image: linear-gradient(to right, #333, #f0f0f0, #333);
+ }
+
+ .footer-contact {
+     padding: 15px;
+ }
+
+ /* Responsive Media Queries */
+ @media screen and (max-width: 1200px) {
+
+     /* Adjusting profile card styles for medium-sized screens */
+     .profile-card {
+         flex-basis: calc(50% - 20px);
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+     /* Adjusting styles for small screens (mobile) */
+
+     /* Show the menu toggle button and hide the regular navigation links */
+     .profile-card {
+         flex-basis: 100%;
+     }
+
+     .navbar {
+         flex-wrap: wrap;
+     }
+
+     .navbar-brand,
+     .navbar-nav {
+         flex-basis: 100%;
+         text-align: center;
+     }
+
+     .navbar-nav {
+         justify-content: center;
+         margin-top: 10px;
+     }
+
+     .nav-item {
+         margin: 10px;
+     }
+
+     /* Hide the 'Show More' button on small screens */
+     .show-more-btn {
+         display: none;
+     }
+
+     /* Show the hidden navigation links as a vertical list */
+     .navbar-nav-hidden {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         margin-top: 20px;
+     }
+
+     /* Adjust font-size and padding for smaller screens */
+     .cover h1 {
+         font-size: 2rem;
+     }
+
+     .cta-button {
+         padding: 10px 20px;
+         font-size: 1.2rem;
+     }
+
+     .bodyquote {
+         padding: 30px 20px;
+     }
+ }

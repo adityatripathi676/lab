@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<conio.h>
 int main() {
     float n,i,t,sum=0;
     clrscr();

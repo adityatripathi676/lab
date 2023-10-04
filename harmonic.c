@@ -9,6 +9,6 @@ int main() {
         t=1/(i*i);
         sum=sum+t;
     }
-    printf("Sum of Harmonic Numbers is %f",sum);
+    printf("Sum of Harmonic Numbers is: %f",sum);
     getch();
 }

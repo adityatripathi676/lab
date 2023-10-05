@@ -31,6 +31,6 @@ int main() {
         }
         
     }
-    printf("Sum is: %d",sum);
+    printf("Sum is: %d \n",sum);
     return 0;
 }

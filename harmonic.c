@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 int main() {
     float n,i,t,sum=0;
     clrscr();
@@ -10,6 +9,6 @@ int main() {
         t=1/(i*i);
         sum=sum+t;
     }
-    printf("Sum of Harmonic Numbers is %f",sum);
+    printf("Sum of Harmonic Numbers is: %f",sum);
     getch();
 }
